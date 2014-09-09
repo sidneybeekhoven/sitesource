@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://sidney.beekhoven.nl/sitemap.xml 
