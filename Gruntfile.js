@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     jshint: {
       all: ['Gruntfile.js', 'source/js/freelancer.js'],
       options: {
-        jshintrc: '.jshintrc',
+        jshintrc: '.jshintrc'
       }
     },
 
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
           '<%= site.theme %>/bootstrap',
           '<%= site.theme %>/components',
           '<%= site.theme %>/utils'
-        ],
+        ]
       },
       site: {
         src: ['<%= site.theme %>/freelancer.less', '<%= site.theme %>/mixins.less', '<%= site.theme %>/variables.less'],
@@ -90,7 +90,12 @@ module.exports = function(grunt) {
           {expand: true, cwd: 'source/fonts', src: ['*.*'], dest: '<%= site.assets %>/fonts/'},
           {expand: true, cwd: 'source/js',    src: ['*.*'], dest: '<%= site.assets %>/js/'},
           {expand: true, cwd: 'source/img',    src: ['**/*'], dest: '<%= site.assets %>/img/'},
-          {expand: true, cwd: 'source/css',    src: ['bootstrap.min.css'], dest: '<%= site.assets %>/css/'},
+          {expand: true, cwd: 'source/css',    src: ['bootstrap.min.css'], dest: '<%= site.assets %>/css/'}
+        ]
+      },
+      divers: {
+        files: [
+          {expand: true, cwd: 'source', src: ['CNAME'], dest: '<%= site %>/'}
         ]
       }
     },
