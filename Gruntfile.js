@@ -95,7 +95,7 @@ module.exports = function(grunt) {
       },
       divers: {
         files: [
-          {expand: true, cwd: 'source', src: ['CNAME'], dest: '<%= site %>/'}
+          {expand: true, cwd: 'source', src: ['CNAME'], dest: '<%= site.root %>/'}
         ]
       }
     },
@@ -131,5 +131,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('docs', ['readme', 'sync']);
 
-  grunt.registerTask('default', ['clean', 'jshint', 'copy:assets', 'assemble', 'less', 'docs']);
+  grunt.registerTask('default', ['clean', 'jshint', 'copy:assets', 'copy:divers', 'assemble', 'less', 'docs']);
 };
