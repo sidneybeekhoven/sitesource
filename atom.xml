@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Sidney Beekhoven]]></title>
+  <link href="http://sidney.beekhoven.nl/atom.xml" rel="self"/>
+  <link href="http://sidney.beekhoven.nl/"/>
+  <updated>2014-08-29T20:58:01+02:00</updated>
+  <id>http://sidney.beekhoven.nl/</id>
+  <author>
+    <name><![CDATA[Sidney Beekhoven]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
